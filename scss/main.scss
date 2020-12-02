@@ -109,6 +109,115 @@ main{
     padding:0.5rem;
     border-bottom: $secondary-color 5px solid;
 }
+///work project
+.projects{
+    display:grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+img{
+    width:100%;
+    border:3px #fff solid;
+
+    &:hover{
+        opacity:0.5;
+        border-color:$secondary-color;
+        @include easeOut;
+    }
+}
+}
+//Button style
+.btn{
+    display: block;
+    padding:0.5rem 1re;
+    border:none;
+    margin-bottom:0.3rem;
+
+    &:hover{
+        background: $secondary-color;
+        color:set-text-color
+        ($secondary-color);
+    }
+
+}
+.btn-dark{
+@extend .btn;
+background: darken($primary-color, 50);
+color:#fff;
+}
+.btn-light{
+@extend .btn;
+background: lighten($primary-color, 50);
+color:#333;
+}
+
+.form{
+
+    &__group:not(:last-child){
+        margin-bottom: 2rem;
+
+    }
+    &__input{
+        font-size: 1.5rem;
+        font-family: inherit;
+        color:inherit;
+        padding:1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($secondary-color, .5);
+        border:none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+
+
+        &:focus{
+            outline:none;
+            box-shadow: 0 1rem 2rem  rgba($secondary-color, .1);
+            border-bottom: 3px solid $primary-color;
+        }
+        &:focus:invalid{
+            border-bottom: 3px solid $secondary-color;   
+        }
+    
+
+
+        &::-webkit-input-placeholder{
+            color: $color-white;
+    
+    
+    
+        }
+
+
+    }
+    
+    &__label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left:2rem;
+        margin-top:.7rem;
+        display:block;
+        transition: all .3s;
+
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity:0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+        
+
+    }
+
+
+.btn-big{
+    background: darken($primary-color, 50);
+   color:#fff;
+   width:100%;
+}
+}
+
+
 
 #main-footer{
     text-align: center;
@@ -117,4 +226,6 @@ main{
     color: set-text-color($primary-color);
     height: 60px;
 }
-@import 'mobile';
+ @import 'mobile';
+
+
