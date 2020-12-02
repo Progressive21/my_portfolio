@@ -57,7 +57,7 @@
       height: 250px;
       background: url("../img/img-port.jpg");
       border-radius: 50%;
-      border: solid 3px; }
+      border: solid 3px #8f1515; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -161,7 +161,7 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: 3px solid; }
+  border: 3px solid #8f1515; }
 
 .bio {
   grid-area: bio; }

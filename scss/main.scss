@@ -90,19 +90,19 @@ main{
     grid-area:bioimage;
     margin:auto;
     border-radius: 50%;
-    border:3px solid;
+    border:3px solid $secondary-color;
 }
 .bio{
     grid-area:bio;
 }
 .job1{
-    grid-area:job1
+    grid-area:job1;
 }
 .job2{
-    grid-area:job2
+    grid-area:job2;
 }
 .job3{
-    grid-area:job3
+    grid-area:job3;
 }
 .job{
     background:lighten($primary-color, 5);
