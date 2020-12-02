@@ -158,7 +158,7 @@ main {
   grid-template-columns: repeat(3, ifr); }
 
 .bio-image {
-  grid-area: bio-image;
+  grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
   border: 3px solid; }
